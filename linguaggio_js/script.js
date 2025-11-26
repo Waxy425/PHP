@@ -84,6 +84,24 @@ var somma = a + c;
 console.log(a + b); //somma
 console.log(a + c); //concatenazione
 console.log(somma + b); //213
-console.log(somma > 212); //somma viene convertita in numero
+console.log(somma > 20); //somma viene convertita in numero quindi vero
 console.log(somma-length); //lunghezza della stringa
 console.log(a + b + c); //51
+
+var d;
+console.log(d); //undefined
+d = undefined;
+
+var e = null;
+console.log(e); //null
+
+var oggetto = {
+    "nullo": null,
+    "undefined": undefined
+};
+console.log(oggetto);
+
+console.log(d == true); //falso
+console.log(e == true); //falso
+console.log(d == e); //entrambi falsi -> true
+console.log(d === e); //nullo è diverso da undefined
