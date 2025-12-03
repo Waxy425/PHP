@@ -178,3 +178,65 @@ console.log(lista.getElementsByClassName("figlio")); //1 figlio
 //inserisci testo semplice nell'elemento
 lista.innerText = "<li>1</li><li class='figlio'>2</li>";
 console.log(lista.getElementsByClassName("figlio")); //0 figli
+
+
+var voti = [4, 6, 7, 8, 6, 8]
+var somma = 0;
+for (let i = 0; i < voti.length; i++) {
+    somma += voti[i];
+}
+console.log("Media = " + (somma / voti.length));
+
+window.prompt("Inserisci un numero");
+
+var elementi = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+let i = 0;
+let trovato = false;
+
+while (!trovato && i < elementi.lrngth) {
+    if (numero == elementi[1]) {
+        trovato = true;
+    }
+    i++;
+}
+
+if (trovato) {
+    console.log("Elemento trovato");
+} else {
+    console.log("Elemento non trovato");
+}
+
+
+
+var array = [1, 2, 3, 4, 5];
+var oggetto = {
+    nome: "Luca",
+    cognome: "Rossi"
+};
+
+//ciclo for of --> funziona solo su elementi iterabili (su cui è possibile farci un ciclo sopra ma gli oggetti in JS non sono iterabili)
+for (valore of array) {
+    console.log(valore)
+}
+
+
+//ciclo for in
+for (chiave in oggetto) {
+    console.log(oggetto[chiave]);
+}
+
+
+//modifichiamo il bottone perchè mi faccia degli eventi
+var clickMeButton = document.getElementById("click-me-button");
+
+clickMeButton.addEventListener('mouseenter', function() {
+    clickMeButton.style.top = Math.random() * 100 + "%";
+    clickMeButton.style.left = Math.random() * 100 + "%";
+})
+
+
+
+function mostra_password() {
+    
+}
